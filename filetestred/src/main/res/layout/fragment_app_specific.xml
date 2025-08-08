@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_specific_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/text_create_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Private Storage"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_browse_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse Private Storage" />
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Private File/Folder" />
+
+        <Button
+            android:id="@+id/btn_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import File/Folder\n to Private Storage" />
+
+        <Button
+            android:id="@+id/btn_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export to Shared Folder"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Up"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCurrentPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Path: /"
+            android:textStyle="italic"
+            android:padding="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/file_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_file_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="File preview will appear here"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

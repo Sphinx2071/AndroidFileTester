@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter path/name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="8"/>
+
+    <Button
+        android:id="@+id/create_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create File"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Folder"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"/>
+
+</LinearLayout>

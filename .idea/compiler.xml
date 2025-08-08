@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="Android_File_Tester.app" target="17" />
+      <module name="Android_File_Tester.bluefiletester" target="17" />
+      <module name="Android_File_Tester.filecreator" target="17" />
+      <module name="Android_File_Tester.filepathlib" target="11" />
+      <module name="Android_File_Tester.filepathlib.main" target="11" />
+      <module name="Android_File_Tester.filepathlib.test" target="11" />
+      <module name="Android_File_Tester.filereader" target="17" />
+      <module name="Android_File_Tester.purplefileviewer" target="17" />
+      <module name="Android_File_Tester.redfiletester" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/saf_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/saf_text_create_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Storage Access Framework"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_saf_browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse via SAF" />
+
+        <Button
+            android:id="@+id/btn_saf_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create File/Folder via SAF" />
+
+        <Button
+            android:id="@+id/btn_saf_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import File/Folder via SAF" />
+
+        <Button
+            android:id="@+id/btn_saf_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export via SAF"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Up"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCurrentPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Path: No file selected"
+            android:textStyle="italic"
+            android:padding="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/file_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/saf_text_file_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="File preview will appear here"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>
