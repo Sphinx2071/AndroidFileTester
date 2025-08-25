@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_navigation_home_to_safFragment"
             app:destination="@id/navigation_saf"/>
+        <action
+            android:id="@+id/action_navigation_home_to_tcpTransferFragment"
+            app:destination="@+id/navigation_tcp"/>
     </fragment>
 
     <fragment
@@ -41,4 +44,10 @@
         android:name="edu.androidfiletester.filetestred.ui.saf.SafFragment"
         android:label="Storage Access Framework"
         tools:layout="@layout/fragment_saf"/>
+
+    <fragment
+        android:id="@+id/navigation_tcp"
+        android:name="edu.androidfiletester.filetestred.ui.tcpTransfer.TcpTransferFragment"
+        android:label="TCP Transfer"
+        tools:layout="@layout/fragment_tcp_transfer"/>
 </navigation>

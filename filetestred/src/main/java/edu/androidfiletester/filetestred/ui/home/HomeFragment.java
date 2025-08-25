@@ -49,6 +49,11 @@ public class HomeFragment extends Fragment {
             navController.navigate(R.id.action_navigation_home_to_safFragment);
         });
 
+        binding.btnServerStorage.setOnClickListener(v ->{
+            NavController navController = Navigation.findNavController(v);
+            navController.navigate(R.id.action_navigation_home_to_tcpTransferFragment);
+        });
+
         binding.btnDbStorage.setOnClickListener(v -> {
             Toast.makeText(requireContext(), "DB not implemented yet", Toast.LENGTH_LONG).show();
         });

@@ -6,10 +6,10 @@
     android:paddingTop="?attr/actionBarSize">
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/tcp_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="File Playground (Hard Coded)"
+        android:text="TCP Transfer (Hard Coded)"
         android:textSize="20sp"
         android:textAlignment="center"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,11 +20,11 @@
         android:layout_marginEnd="16dp"/>
 
     <Button
-        android:id="@+id/btn_app_specific_storage"
+        android:id="@+id/btn_tcp_send"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="App-Specific Storage"
-        app:layout_constraintTop_toBottomOf="@id/text_home"
+        android:text="Upload a file via TCP"
+        app:layout_constraintTop_toBottomOf="@id/tcp_home"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="16dp"
@@ -32,39 +32,17 @@
         android:layout_marginEnd="16dp"/>
 
     <Button
-        android:id="@+id/btn_saf_storage"
+        android:id="@+id/btn_tcp_get"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Storage Access Framework"
-        app:layout_constraintTop_toBottomOf="@id/btn_app_specific_storage"
+        android:text="Download a file via TCP"
+        app:layout_constraintTop_toBottomOf="@id/btn_tcp_send"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"/>
 
-    <Button
-        android:id="@+id/btn_server_storage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Server Storage"
-        app:layout_constraintTop_toBottomOf="@id/btn_saf_storage"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
 
-    <Button
-        android:id="@+id/btn_db_storage"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Database Storage"
-        app:layout_constraintTop_toBottomOf="@id/btn_server_storage"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
